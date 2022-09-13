@@ -6,13 +6,14 @@ namespace LightningTalkDemo
     {
         static void Main(string[] args)
         {
-            //User Input
             int num;
-            Console.Write("Enter a number: ");
-            num = Int32.Parse(Console.ReadLine());
+            while (true) {
+                //User Input
+                Console.Write("Enter a number: ");
+                num = Int32.Parse(Console.ReadLine());
 
-            Console.WriteLine("{0} is {1}", num, OddOrEven(num));
-            Console.ReadKey();
+                Console.WriteLine("{0} is {1}", num, OddOrEven(num));
+            }
         }
 
         static string OddOrEven(int number)
